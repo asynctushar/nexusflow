@@ -27,10 +27,10 @@ const Features = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16 sm:mb-20"
                 >
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                         Powerful Features for <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Modern Teams</span>
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+                    <p className="text-md sm:text-lg text-gray-400 max-w-3xl mx-auto">
                         Everything you need to build, deploy, and scale applications with confidence and speed.
                     </p>
                 </motion.div>
@@ -43,11 +43,11 @@ const Features = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            whileHover={{ y: -10, scale: 1.02 }}
+                            whileHover={{ scale: 1.02 }}
                             className="bg-linear-to-br from-blue-900/30 to-cyan-900/30 backdrop-blur p-6 sm:p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/50 transition-all"
                         >
                             <motion.div
-                                whileHover={{ rotate: 360, scale: 1.2 }}
+                                whileHover={{ scale: 1.1 }}
                                 transition={{ duration: 0.5 }}
                                 className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-r from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/30"
                             >

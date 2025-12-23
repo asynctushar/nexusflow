@@ -46,10 +46,10 @@ const WhyChooseUs = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16 sm:mb-20"
                 >
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                         Why Choose <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">NexusFlow</span>
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+                    <p className="text-md sm:text-lg text-gray-400 max-w-3xl mx-auto">
                         We're not just another cloud platform. We're your partner in building the future.
                     </p>
                 </motion.div>
@@ -62,11 +62,11 @@ const WhyChooseUs = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            whileHover={{ y: -10 }}
+                            whileHover={{ scale: 1.02}}
                             className="bg-linear-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur p-6 sm:p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500/60 transition-all"
                         >
                             <motion.div
-                                whileHover={{ rotate: 360 }}
+                                whileHover={{ scale: 1.03 }}
                                 transition={{ duration: 0.6 }}
                                 className="w-14 h-14 sm:w-16 sm:h-16 bg-linear-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center mb-6 shadow-xl shadow-blue-500/40"
                             >

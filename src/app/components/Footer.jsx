@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
-import {Sparkles,  Linkedin, Twitter, Github, MessageSquare, MapPin, Mail } from 'lucide-react';
+import { Sparkles, Linkedin, Twitter, Github, MessageSquare, MapPin, Mail } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -28,7 +28,7 @@ const Footer = () => {
                                 <motion.a
                                     key={i}
                                     href={social.href}
-                                    whileHover={{ scale: 1.2, rotate: 360 }}
+                                    whileHover={{ scale: 1.2, }}
                                     whileTap={{ scale: 0.9 }}
                                     className="w-10 h-10 bg-blue-500/20 hover:bg-blue-500/40 rounded-full flex items-center justify-center border border-blue-500/30 transition-all"
                                 >
@@ -45,7 +45,7 @@ const Footer = () => {
                                 <motion.li
                                     key={i}
                                     whileHover={{ x: 5 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    transition={{ type: "tween", stiffness: 300 }}
                                 >
                                     <a href="#" className="hover:text-blue-400 transition-colors">{item}</a>
                                 </motion.li>
@@ -60,7 +60,7 @@ const Footer = () => {
                                 <motion.li
                                     key={i}
                                     whileHover={{ x: 5 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    transition={{ type: "tween", stiffness: 300 }}
                                 >
                                     <a href="#" className="hover:text-blue-400 transition-colors">{item}</a>
                                 </motion.li>
@@ -75,7 +75,7 @@ const Footer = () => {
                                 <motion.li
                                     key={i}
                                     whileHover={{ x: 5 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    transition={{ type: "tween", stiffness: 300 }}
                                 >
                                     <a href="#" className="hover:text-blue-400 transition-colors">{item}</a>
                                 </motion.li>
@@ -90,7 +90,7 @@ const Footer = () => {
                                 <motion.li
                                     key={i}
                                     whileHover={{ x: 5 }}
-                                    transition={{ type: "spring", stiffness: 300 }}
+                                    transition={{ type: "tween", stiffness: 300 }}
                                 >
                                     <a href="#" className="hover:text-blue-400 transition-colors">{item}</a>
                                 </motion.li>

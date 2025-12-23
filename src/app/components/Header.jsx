@@ -48,7 +48,7 @@ const Header = () => {
                                 animate={{ opacity: 1, scale: 1 }}
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="bg-linear-to-r from-blue-600 to-cyan-600 px-6 py-2 rounded-full font-semibold text-sm shadow-lg shadow-blue-500/30"
+                                className="bg-linear-to-r from-blue-600 to-cyan-600 px-6 py-2 rounded-md font-semibold text-sm shadow-lg shadow-blue-500/30 cursor-pointer"
                             >
                                 Get Started
                             </motion.button>
@@ -92,7 +92,7 @@ const Header = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.4 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="w-full bg-linear-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-full font-semibold shadow-lg shadow-blue-500/30"
+                                    className="w-full bg-linear-to-r from-blue-600 to-cyan-600 px-6 py-3 rounded-md font-semibold shadow-lg shadow-blue-500/30"
                                 >
                                     Get Started Free
                                 </motion.button>

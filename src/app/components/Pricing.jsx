@@ -35,13 +35,13 @@ const Pricing = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16 sm:mb-20"
                 >
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                         Simple, Transparent <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Pricing</span>
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-400">Choose the perfect plan that scales with your ambitions</p>
+                    <p className="text-md sm:text-lg text-gray-400">Choose the perfect plan that scales with your ambitions</p>
                 </motion.div>
 
-                <div className="grid lg:grid-cols-3 gap-6 sm:gap-8">
+                <div className="grid lg:grid-cols-3 gap-6 sm:gap-12">
                     {plans.map((plan, i) => (
                         <motion.div
                             key={i}
@@ -49,7 +49,7 @@ const Pricing = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            whileHover={{ y: -10, scale: 1.02 }}
+                            whileHover={{ scale: 1.02 }}
                             className={`bg-linear-to-br from-blue-900/30 to-cyan-900/30 backdrop-blur rounded-3xl p-6 sm:p-8 border relative ${plan.popular ? 'border-blue-500 shadow-2xl shadow-blue-500/30 lg:scale-105' : 'border-blue-500/20'
                                 }`}
                         >
@@ -88,8 +88,8 @@ const Pricing = () => {
                             </ul>
 
                             <motion.button
-                                whileHover={{ scale: 1.05 }}
-                                whileTap={{ scale: 0.95 }}
+                                whileHover={{ scale: 1.02 }}
+                                whileTap={{ scale: 0.97 }}
                                 className={`w-full py-3 sm:py-4 rounded-xl font-semibold ${plan.popular
                                     ? 'bg-linear-to-r from-blue-600 to-cyan-600 shadow-lg shadow-blue-500/30'
                                     : 'bg-white/10 hover:bg-white/20'

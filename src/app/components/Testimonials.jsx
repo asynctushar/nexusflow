@@ -64,10 +64,10 @@ const Testimonials = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16 sm:mb-20"
                 >
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                         Loved by <span className="bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Developers</span>
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-400">See what our community has to say about their experience</p>
+                    <p className="text-md sm:text-lg text-gray-400">See what our community has to say about their experience</p>
                 </motion.div>
 
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -78,7 +78,7 @@ const Testimonials = () => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             transition={{ delay: i * 0.1 }}
                             viewport={{ once: true }}
-                            whileHover={{ y: -10, scale: 1.02 }}
+                            whileHover={{  scale: 1.02 }}
                             className="bg-linear-to-br from-blue-900/30 to-cyan-900/30 backdrop-blur p-6 sm:p-8 rounded-3xl border border-blue-500/20 hover:border-blue-500/50 transition-all"
                         >
                             <div className="flex space-x-1 mb-4">
@@ -97,7 +97,7 @@ const Testimonials = () => {
                             <p className="text-gray-300 mb-6 text-sm sm:text-base leading-relaxed italic">"{testimonial.content}"</p>
                             <div className="flex items-center space-x-4">
                                 <motion.div
-                                    whileHover={{ scale: 1.1, rotate: 360 }}
+                                    whileHover={{ scale: 1.1,}}
                                     transition={{ duration: 0.5 }}
                                     className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-linear-to-r ${testimonial.color} flex items-center justify-center font-bold text-base sm:text-lg shadow-lg`}
                                 >

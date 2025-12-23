@@ -48,10 +48,10 @@ const Process = () => {
                     >
                         <Rocket className="w-8 h-8 sm:w-10 sm:h-10 text-blue-400" />
                     </motion.div>
-                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
                         What We Do
                     </h2>
-                    <p className="text-lg sm:text-xl text-gray-400 max-w-3xl mx-auto">
+                    <p className="text-md sm:text-lg text-gray-400 max-w-3xl mx-auto">
                         We provide a complete cloud platform that empowers developers and teams to build, deploy, and scale applications without infrastructure complexity.
                     </p>
                 </motion.div>
@@ -67,12 +67,11 @@ const Process = () => {
                             className="relative"
                         >
                             <motion.div
-                                whileHover={{ y: -10 }}
+                                whileHover={{ y: -5 }}
                                 className="bg-linear-to-br from-blue-900/40 to-cyan-900/40 backdrop-blur p-6 sm:p-8 rounded-2xl border border-blue-500/30 hover:border-blue-500/60 transition-all h-full"
                             >
                                 <div className="text-5xl sm:text-6xl font-bold text-blue-500/30 mb-4">{item.step}</div>
                                 <motion.div
-                                    whileHover={{ rotate: 360 }}
                                     transition={{ duration: 0.6 }}
                                     className="w-12 h-12 sm:w-14 sm:h-14 bg-linear-to-r from-blue-600 to-cyan-600 rounded-xl flex items-center justify-center mb-6"
                                 >
