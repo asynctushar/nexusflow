@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, useScroll, useSpring, AnimatePresence } from 'motion/react';
 import { Menu, X, Sparkles, } from 'lucide-react';
+import Link from 'next/link';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,12 +23,14 @@ const Header = () => {
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
                             animate={{ opacity: 1, x: 0 }}
-                            className="flex items-center space-x-2"
+                            className=""
                         >
-                            <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-blue-400" />
-                            <span className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                                NexusFlow
-                            </span>
+                            <Link href="#hero" className='flex items-center space-x-2'>
+                                <Sparkles className="w-7 h-7 sm:w-8 sm:h-8 text-blue-400" />
+                                <span className="text-xl sm:text-2xl font-bold bg-linear-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                                    NexusFlow
+                                </span>
+                            </Link>
                         </motion.div>
 
                         <div className="hidden lg:flex items-center space-x-8">
